@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_sale_report_tree_inherit_add_tags" model="ir.ui.view">
+            <field name="name">sale.report.tree.inherit.add.tags</field>
+            <field name="model">sale.report</field>
+            <field name="inherit_id" ref="sale.sale_report_view_tree"/> <field name="arch" type="xml">
+                <xpath expr="//field[@name='date']" position="before">
+                    <field name="x_sale_tags" optional="show" string="Tags"/>
+                </xpath>
+                <xpath expr="//field[@name='product_id']" position="replace">
+                    <field name="product_name_only" string="Nama Produk" optional="show"/>
+                </xpath>
+                <xpath expr="//field[@name='product_name_only']" position="after">
+                    <field name="product_category_name" string="Kategori Produk" optional="show"/>
+                    <field name="product_default_code" string="Kode Produk" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
