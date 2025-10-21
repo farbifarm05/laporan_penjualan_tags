@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_report_for_sales_group,sale.report access for sales group,model_sale_report,sale.group_sale_salesman,1,0,0,0
+access_crm_tag_for_sales_group,crm.tag access for sales group,model_crm_tag,sale.group_sale_salesman,1,0,0,0
